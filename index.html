@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Sheet Calculator || Develop by Purna Bahadur Khatri</title>
+    
+    <!-- favicon  -->
+     <link rel="icon" href="image/icone.png">
+    
+    <!-- External Css -->
+     <link rel="stylesheet" href="css/style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Sheet Calculator</h1>
+        <h3>Enter marks for 6 subjects (0-100):</h3>
+
+        <div class="input-group">
+            <label for="studentName">👤 Student Name:</label>
+            <input type="text" name="studentName" id="studentName" required placeholder="Enter student name...">
+        </div>
+
+        <div class="subjects-grid">
+            <div class="input-group">
+                <label for="webdevelopment">💻 Web Development:</label>
+                <input type="number" name="webdevelopment" id="webdevelopment" min="0" max="100" required placeholder="Enter marks (0-100)">
+            </div>
+
+            <div class="input-group">
+                <label for="cprogramming">🖥️ C Programming:</label>
+                <input type="number" name="cprogramming" id="cprogramming" min="0" max="100" required placeholder="Enter marks (0-100)">
+            </div>
+
+            <div class="input-group">
+                <label for="networking">🌐 Networking:</label>
+                <input type="number" name="networking" id="networking" min="0" max="100" required placeholder="Enter marks (0-100)">
+            </div>
+
+            <div class="input-group">
+                <label for="cybersecurity">🔒 Cyber Security:</label>
+                <input type="number" name="cybersecurity" id="cybersecurity" min="0" max="100" required placeholder="Enter marks (0-100)">
+            </div>
+
+            <div class="input-group">
+                <label for="digitalmarketing">📈 Digital Marketing:</label>
+                <input type="number" name="digitalmarketing" id="digitalmarketing" min="0" max="100" required placeholder="Enter marks (0-100)">
+            </div>
+
+            <div class="input-group">
+                <label for="english">📚 English:</label>
+                <input type="number" name="english" id="english" min="0" max="100" required placeholder="Enter marks (0-100)">
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button onclick="calculateGrade()" class="calculate-btn">Calculate Grade 📊</button>
+            <button onclick="resetForm()" class="reset-btn">Reset Form 🔄</button>
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+        <div class="result" id="resultBox"></div>
+    </div>
+
+    <!-- External Js Connected  -->
+    <script src="js/script.js"> </script>
+</body>
+</html>
